@@ -1,6 +1,6 @@
 <!DOCTYPE html>
 <html>
-
+<script src="assets/js/script.js" defer></script>
 <head>
 
 <title>E-Commerce Website</title>
