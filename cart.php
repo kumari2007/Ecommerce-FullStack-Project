@@ -106,6 +106,17 @@ Remove
 </div>
 
 <h2 class="total-box">
+    <div style="text-align:center; margin-top:30px;">
+
+<a href="checkout.php">
+
+<button class="checkout-btn">
+Proceed To Checkout 💳
+</button>
+
+</a>
+
+</div>
 Total:
 ₹<?php echo $total; ?>
 </h2>
