@@ -1,3 +1,6 @@
+<?php
+session_start();
+?>
 <!DOCTYPE html>
 <html>
 <script src="assets/js/script.js" defer></script>
@@ -29,6 +32,37 @@ UrbanCart
 </li>
 
 <li>
+<a href="cart.php">Cart</a>
+</li>
+
+<?php
+if(isset($_SESSION['user']))
+{
+?>
+
+<li>
+
+<a href="#">
+Hi,
+<?php echo $_SESSION['user']; ?>
+
+</a>
+
+</li>
+
+<li>
+<a href="logout.php">
+Logout
+</a>
+</li>
+
+<?php
+}
+else
+{
+?>
+
+<li>
 <a href="login.php">Login</a>
 </li>
 
@@ -36,9 +70,9 @@ UrbanCart
 <a href="register.php">Register</a>
 </li>
 
-<li>
-<a href="cart.php">Cart</a>
-</li>
+<?php
+}
+?>
 
 </ul>
 
