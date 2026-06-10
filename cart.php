@@ -47,6 +47,18 @@ My Cart 🛒
 
 <div class="cart-grid">
 <?php
+if(mysqli_num_rows($result)==0)
+{
+echo "
+
+<h2 style='text-align:center;'>
+🛒 Your Cart Is Empty
+</h2>
+
+";
+
+}
+else{
 while($row=mysqli_fetch_assoc($result))
 {
 $total += $row['price'] * $row['quantity'];
@@ -101,6 +113,7 @@ Remove
 
 <?php
 }
+}
 ?>
 
 </div>
@@ -108,8 +121,7 @@ Remove
 <h2 class="total-box">
     <div style="text-align:center; margin-top:30px;">
 
-<a href="checkout.php">
-
+<a href="checkout.php?total=<?php echo $total; ?>">
 <button class="checkout-btn">
 Proceed To Checkout 💳
 </button>

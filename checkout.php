@@ -80,8 +80,8 @@ required>
 <input
 type="number"
 name="total"
-placeholder="Total Quantity"
-required>
+value="<?php echo $_GET['total']; ?>"
+readonly>
 
 <button name="place_order">
 Place Order
