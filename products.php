@@ -65,10 +65,13 @@ while($row=mysqli_fetch_assoc($result))
 
 <br>
 
+<a href="add_to_cart.php?id=<?php echo $row['id']; ?>">
+
 <button>
 Add to Cart
 </button>
 
+</a>
 </div>
 
 </div>
