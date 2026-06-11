@@ -1,4 +1,3 @@
-# Ecommerce-FullStack-Project
 # 🛒 UrbanCart - Full Stack E-Commerce Website
 
 ##  Project Overview
